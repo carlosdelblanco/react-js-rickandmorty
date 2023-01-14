@@ -1,5 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap";
+import Cards from "./components/Cards/Cards";
 import Filters from "./components/Filters/Filters";
 
 function App() {
@@ -13,7 +14,13 @@ function App() {
           <div className="col-3">
             <Filters />
           </div>
-          <div className="col-8"></div>
+          <div className="col-8">
+            <div className="row">
+              <Cards />
+              <Cards />
+              <Cards />
+            </div>
+          </div>
         </div>
       </div>
     </div>
