@@ -7,7 +7,8 @@ import Filters from "./components/Filters/Filters";
 function App() {
   let [pageNumber, setPageNumber] = useState(1);
   let [fetchedData, updateFetchedData] = useState([]);
-  console.log(fetchedData.results);
+  let { info, results } = fetchedData;
+
   let api = `https://rickandmortyapi.com/api/character/?page${pageNumber}`;
 
   useEffect(() => {
