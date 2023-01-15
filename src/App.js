@@ -17,6 +17,7 @@ function App() {
       updateFetchedData(data);
     })();
   }, [api]);
+
   return (
     <div className="App">
       <h1 className="text-center ubuntu my-4">
@@ -29,9 +30,7 @@ function App() {
           </div>
           <div className="col-8">
             <div className="row">
-              <Cards />
-              <Cards />
-              <Cards />
+              <Cards results={results} />
             </div>
           </div>
         </div>

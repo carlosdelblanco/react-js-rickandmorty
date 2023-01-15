@@ -1,7 +1,16 @@
 import React from "react";
 
-const Cards = () => {
-  return <div className="col-4">Cards</div>;
+const Cards = ({ results }) => {
+  let display;
+  if (results) {
+    display = results.map((x) => {
+      return <div className="col-4"></div>;
+    });
+  } else {
+    display = "No characters found";
+  }
+
+  return <>{display}</>;
 };
 
 export default Cards;
