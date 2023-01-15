@@ -4,7 +4,12 @@ const Cards = ({ results }) => {
   let display;
   if (results) {
     display = results.map((x) => {
-      return <div className="col-4"></div>;
+      let { id, name } = x;
+      return (
+        <div key={id} className="col-4">
+          {name}
+        </div>
+      );
     });
   } else {
     display = "No characters found";
