@@ -77,3 +77,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - Sass
 - React paginate
 - react-router-dom
+- Bootstrap
+
+### Use
+
+-every card has a badge which shows if the character is alive(green) or not (red)
