@@ -78,6 +78,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - React paginate
 - react-router-dom
 - Bootstrap
+- sass
 
 ### Use
 

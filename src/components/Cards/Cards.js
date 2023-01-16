@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./Cards.module.scss";
 
 const Cards = ({ results }) => {
   let display;
@@ -17,7 +18,9 @@ const Cards = ({ results }) => {
               </div>
             </div>
           </div>
-          <div className="badge bg-danger">{status}</div>
+          <div className={`${styles.badge} position-absolute badge bg-danger`}>
+            {status}
+          </div>
         </div>
       );
     });
