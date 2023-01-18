@@ -1,12 +1,13 @@
 import React from "react";
 
-const Pagination = ({ setPageNumber }) => {
+const Pagination = ({ pageNumber, setPageNumber }) => {
   let next = () => {
     setPageNumber((x) => x + 1);
   };
 
   let prev = () => {
-    setPageNumber((x) => x + -1);
+    if (pageNumber === 1) return;
+    setPageNumber((x) => x - 1);
   };
 
   return (

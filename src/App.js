@@ -7,6 +7,7 @@ import Pagination from "./components/Pagination/Pagination";
 
 function App() {
   let [pageNumber, setPageNumber] = useState(1);
+  console.log(pageNumber);
   let [fetchedData, updateFetchedData] = useState([]);
   let { info, results } = fetchedData;
 
@@ -37,7 +38,7 @@ function App() {
           </div>
         </div>
       </div>
-      <Pagination setPageNumber={setPageNumber} />
+      <Pagination pageNumber={pageNumber} setPageNumber={setPageNumber} />
     </div>
   );
 }
