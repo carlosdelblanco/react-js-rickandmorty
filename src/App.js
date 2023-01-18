@@ -3,9 +3,11 @@ import "bootstrap/dist/js/bootstrap";
 import React, { useEffect, useState } from "react";
 import Cards from "./components/Cards/Cards";
 import Filters from "./components/Filters/Filters";
+import Pagination from "./components/Pagination/Pagination";
 
 function App() {
   let [pageNumber, setPageNumber] = useState(1);
+  console.log(pageNumber);
   let [fetchedData, updateFetchedData] = useState([]);
   let { info, results } = fetchedData;
 
@@ -23,6 +25,7 @@ function App() {
       <h1 className="text-center ubuntu my-4">
         Rick & Morty <span className="text-primary">Wiki</span>
       </h1>
+
       <div className="container">
         <div className="row">
           <div className="col-3">
@@ -35,6 +38,7 @@ function App() {
           </div>
         </div>
       </div>
+      <Pagination pageNumber={pageNumber} setPageNumber={setPageNumber} />
     </div>
   );
 }
