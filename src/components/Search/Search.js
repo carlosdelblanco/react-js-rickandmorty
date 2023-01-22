@@ -9,7 +9,7 @@ const Search = () => {
         type="text"
         className={styles.input}
       />
-      <button className="btn btn-primary">Search</button>
+      <button className={`${styles.btn} btn btn-primary fs-5`}>Search</button>
     </form>
   );
 };

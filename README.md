@@ -82,4 +82,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ### Use
 
--every card has a badge which shows if the character is alive(green), dead (red) or unknown (gray)
+- every card has a badge which shows if the character is alive(green), dead (red) or unknown (gray)
+- app has pagination
