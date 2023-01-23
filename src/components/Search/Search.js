@@ -1,10 +1,13 @@
 import React from "react";
 import styles from "./Search.module.scss";
 
-const Search = () => {
+const Search = ({ setSearch }) => {
   return (
     <form className="d-flex justify-content-center gap-4 mb-5">
       <input
+        onChange={(e) => {
+          setSearch(e.target.value);
+        }}
         placeholder="Search for Characters"
         type="text"
         className={styles.input}
