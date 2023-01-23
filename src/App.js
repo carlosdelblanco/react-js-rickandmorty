@@ -28,7 +28,7 @@ function App() {
         Rick & Morty <span className="text-primary">Wiki</span>
       </h1>
 
-      <Search setSearch={setSearch} />
+      <Search setPageNumber={setPageNumber} setSearch={setSearch} />
 
       <div className="container">
         <div className="row">
