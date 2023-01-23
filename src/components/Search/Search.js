@@ -14,7 +14,7 @@ const Search = ({ setSearch, setPageNumber }) => {
         className={styles.input}
       />
       <button
-        onclick={(e) => {
+        onClick={(e) => {
           e.preventDefault();
         }}
         className={`${styles.btn} btn btn-primary fs-5`}
