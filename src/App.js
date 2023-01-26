@@ -23,20 +23,19 @@ function App() {
   }, [api]);
 
   return (
-    <div className="App">
-      <h1 className="text-center ubuntu my-4">
-        Rick & Morty <span className="text-primary">Wiki</span>
+    <div classNameName="App">
+      <h1 classNameName="text-center ubuntu my-4">
+        Rick & Morty <span classNameName="text-primary">Wiki</span>
       </h1>
 
       <Search setPageNumber={setPageNumber} setSearch={setSearch} />
 
-      <div className="container">
-        <div className="row">
-          <div className="col-3">
-            <Filters />
-          </div>
-          <div className="col-8">
-            <div className="row">
+      <div classNameName="container">
+        <div classNameName="row">
+          <Filters />
+
+          <div classNameName="col-8">
+            <div classNameName="row">
               <Cards results={results} />
             </div>
           </div>

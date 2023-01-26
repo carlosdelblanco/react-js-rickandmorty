@@ -8,14 +8,14 @@ const Cards = ({ results }) => {
       let { id, name, image, location, status } = x;
 
       return (
-        <div key={id} className="col-4 mb-4 position-relative">
-          <div className={styles.cards}>
-            <img src={image} alt="" className={`${styles.img} img-fluid`} />
-            <div style={{ padding: "10px" }} className="content">
-              <div className="fs-4 fw-bold mb-4">{name}</div>
-              <div className="">
-                <div className="fs-6">Last location</div>
-                <div className="fs-6">{location.name}</div>
+        <div key={id} classNameName="col-4 mb-4 position-relative">
+          <div classNameName={styles.cards}>
+            <img src={image} alt="" classNameName={`${styles.img} img-fluid`} />
+            <div style={{ padding: "10px" }} classNameName="content">
+              <div classNameName="fs-4 fw-bold mb-4">{name}</div>
+              <div classNameName="">
+                <div classNameName="fs-6">Last location</div>
+                <div classNameName="fs-6">{location.name}</div>
               </div>
             </div>
           </div>
@@ -23,7 +23,7 @@ const Cards = ({ results }) => {
             if (status === "Dead") {
               return (
                 <div
-                  className={`${styles.badge} position-absolute badge bg-danger`}
+                  classNameName={`${styles.badge} position-absolute badge bg-danger`}
                 >
                   {status}
                 </div>
@@ -31,7 +31,7 @@ const Cards = ({ results }) => {
             } else if (status === "Alive") {
               return (
                 <div
-                  className={`${styles.badge} position-absolute badge bg-success`}
+                  classNameName={`${styles.badge} position-absolute badge bg-success`}
                 >
                   {status}
                 </div>
@@ -39,7 +39,7 @@ const Cards = ({ results }) => {
             } else {
               return (
                 <div
-                  className={`${styles.badge} position-absolute badge bg-secondary`}
+                  classNameName={`${styles.badge} position-absolute badge bg-secondary`}
                 >
                   {status}
                 </div>
