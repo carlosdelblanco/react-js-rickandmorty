@@ -4,15 +4,15 @@ import ReactPaginate from "react-paginate";
 const Pagination = ({ info, pageNumber, setPageNumber }) => {
   return (
     <ReactPaginate
-      classNameName="pagination justify-content-center gap-4 my-4"
+      className="pagination justify-content-center gap-4 my-4"
       forcePage={pageNumber === 1 ? 0 : pageNumber - 1}
       nextLabel="Next"
       previousLabel="Prev"
-      nextclassNameName="btn btn-primary"
-      previousclassNameName="btn btn-primary"
-      activeclassNameName="active"
-      pageclassNameName="page-item"
-      pageLinkclassNameName="page-link"
+      nextclassName="btn btn-primary"
+      previousclassName="btn btn-primary"
+      activeclassName="active"
+      pageclassName="page-item"
+      pageLinkclassName="page-link"
       onPageChange={(data) => {
         setPageNumber(data.selected + 1);
       }}
