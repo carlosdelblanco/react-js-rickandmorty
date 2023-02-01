@@ -1,7 +1,7 @@
 import React from "react";
 import FilterBTN from "../FilterBTN";
 
-const Gender = () => {
+const Gender = ({ setPageNumber, setGender }) => {
   let genders = ["female", "male", "genderless", "unknown"];
 
   return (
@@ -24,9 +24,16 @@ const Gender = () => {
         aria-labelledby="headingOne"
         data-bs-parent="#accordionExample"
       >
-        <div className="accordion-body d-flex flex-wrap gap-3">
+        <div className="accordion-body accordion-body d-flex flex-wrap gap-3">
           {genders.map((items, index) => (
-            <FilterBTN key={index} name="gender" index={index} items={items} />
+            <FilterBTN
+              task={setGender}
+              setPageNumber={setPageNumber}
+              key={index}
+              name="gender"
+              index={index}
+              items={items}
+            />
           ))}
         </div>
       </div>
