@@ -85,3 +85,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - every card has a badge which shows if the character is alive(green), dead (red) or unknown (gray)
 - app has pagination
 - Pagination shows the page where we are.
+- Whenever you click on filters, on any header it changes to blue colour
