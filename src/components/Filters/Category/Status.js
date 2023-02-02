@@ -7,7 +7,7 @@ const Status = ({ setStatus, setPageNumber }) => {
     <div className="accordion-item">
       <h2 className="accordion-header" id="headingThree">
         <button
-          className="accordion-button collapsed"
+          className="accordion-button"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#collapseThree"
@@ -19,7 +19,7 @@ const Status = ({ setStatus, setPageNumber }) => {
       </h2>
       <div
         id="collapseThree"
-        className="accordion-collapse collapse"
+        className="accordion-collapse collapse show"
         aria-labelledby="headingThree"
         data-bs-parent="#accordionExample"
       >
