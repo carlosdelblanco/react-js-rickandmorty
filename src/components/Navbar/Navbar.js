@@ -5,8 +5,8 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container">
-        <Link to="/" classNameName="fs-3 ubuntu navbar-brand">
-          Rick & Morty <span classNameName="text-primary">Wiki</span>
+        <Link to="/" className="fs-3 ubuntu navbar-brand">
+          Rick & Morty <span className="text-primary">Wiki</span>
         </Link>
         <button
           className="navbar-toggler"
@@ -24,13 +24,13 @@ const Navbar = () => {
           id="navbarNavAltMarkup"
         >
           <div className="navbar-nav fs-5">
-            <NavLink to="/" classNameName="nav-link active">
+            <NavLink to="/" className="nav-link active">
               Characters
             </NavLink>
-            <NavLink to="/episodes" classNameName="nav-link">
+            <NavLink to="/episodes" className="nav-link">
               Episodes
             </NavLink>
-            <NavLink to="/location" classNameName="nav-link">
+            <NavLink to="/location" className="nav-link">
               Location
             </NavLink>
           </div>
