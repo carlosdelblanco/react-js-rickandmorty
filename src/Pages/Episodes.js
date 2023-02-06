@@ -1,7 +1,26 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const Episodes = () => {
-  return <div>the Episodes are here</div>;
+  let [id, setID] = useState(1);
+  let [info, setInfo] = useState([]);
+  let { air_date, name } = info;
+  let api = `https://rickandmortyapi.com/api/episode/${id}`;
+
+  useEffect(() => {
+    (async function () {
+      let data = await fetch(api).then((res) => res.json());
+      setInfo(data);
+    })();
+  }, [api]);
+  return (
+    <div className="container">
+      <div className="row">
+        <h1 className="text-center">Episode : {name}</h1>
+        <h5 className="text-center">Air date {air_date}</h5>
+      </div>
+      <div className="row"></div>
+    </div>
+  );
 };
 
 export default Episodes;
