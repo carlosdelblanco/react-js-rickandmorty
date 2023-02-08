@@ -86,4 +86,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - app has pagination
 - Pagination shows the page where we are.
 - Whenever you click on filters, on any header it changes to blue colour
-- Everytime you clear the filters it reset the previous selection
+- Everytime you clear the filters it reset the previous selection.
+- At episodes you get a drop-down menu where it loads the characters related to it.
