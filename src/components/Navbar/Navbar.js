@@ -18,7 +18,7 @@ const Navbar = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <style jsx>{`
+          <style jsx="true">{`
             button[aria-expanded="false"] > .close {
               display: none;
             }
