@@ -8,6 +8,7 @@ import Search from "./components/Search/Search";
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import CardDetails from "./components/Cards/CardDetails";
+import Pagination from "./components/Pagination/Pagination";
 import Episodes from "./Pages/Episodes";
 import Location from "./Pages/Location";
 
@@ -20,8 +21,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/:id" element={<CardDetails />} />
+
         <Route path="/episodes" element={<Episodes />} />
         <Route path="/episodes/:id" element={<CardDetails />} />
+
         <Route path="/location" element={<Location />} />
         <Route path="/location/:id" element={<CardDetails />} />
       </Routes>
@@ -51,6 +54,7 @@ const Home = () => {
   return (
     <div className="App">
       <Search setPageNumber={setPageNumber} setSearch={setSearch} />
+
       <div className="container">
         <div className="row">
           <Filters
