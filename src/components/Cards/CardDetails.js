@@ -5,6 +5,8 @@ import { useParams } from "react-router-dom";
 const CardDetails = () => {
   let { id } = useParams();
   let [fetchedData, updateFetchedData] = useState([]);
+  let { name, image, location, origin, gender, species, status, type } =
+    fetchedData;
 
   let api = `https://rickandmortyapi.com/api/character/${id}`;
   useEffect(() => {
@@ -19,6 +21,7 @@ const CardDetails = () => {
     <div className="container d-flex justify-content-center">
       <div className="">
         <h1 className="">{name}</h1>
+        <img src="image" alt="" className="" />
       </div>
     </div>
   );
