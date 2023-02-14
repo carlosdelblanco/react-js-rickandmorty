@@ -10,7 +10,7 @@ const Pagination = ({ info, pageNumber, setPageNumber }) => {
       previousLabel="Prev"
       nextclassName="btn btn-primary"
       previousclassName="btn btn-primary"
-      activeclassName="active"
+      activeclassname="active"
       pageclassName="page-item"
       pageLinkclassName="page-link"
       onPageChange={(data) => {
