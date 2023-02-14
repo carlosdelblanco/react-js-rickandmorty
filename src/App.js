@@ -4,10 +4,11 @@ import React, { useEffect, useState } from "react";
 import Cards from "./components/Cards/Cards";
 import Filters from "./components/Filters/Filters";
 import Navbar from "./components/Navbar/Navbar";
-import Pagination from "./components/Pagination/Pagination";
 import Search from "./components/Search/Search";
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import CardDetails from "./components/Cards/CardDetails";
+import Pagination from "./components/Pagination/Pagination";
 import Episodes from "./Pages/Episodes";
 import Location from "./Pages/Location";
 
@@ -19,8 +20,13 @@ function App() {
       </div>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/:id" element={<CardDetails />} />
+
         <Route path="/episodes" element={<Episodes />} />
+        <Route path="/episodes/:id" element={<CardDetails />} />
+
         <Route path="/location" element={<Location />} />
+        <Route path="/location/:id" element={<CardDetails />} />
       </Routes>
     </Router>
   );
@@ -47,6 +53,7 @@ const Home = () => {
 
   return (
     <div className="App">
+      <h1 className="text-center mb-4">Characters</h1>
       <Search setPageNumber={setPageNumber} setSearch={setSearch} />
 
       <div className="container">
@@ -60,11 +67,12 @@ const Home = () => {
 
           <div className="col-8">
             <div className="row">
-              <Cards results={results} />
+              <Cards page="/" results={results} />
             </div>
           </div>
         </div>
       </div>
+
       <Pagination
         info={info}
         pageNumber={pageNumber}

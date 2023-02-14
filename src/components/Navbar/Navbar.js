@@ -18,7 +18,7 @@ const Navbar = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <style jsx>{`
+          <style jsx="true">{`
             button[aria-expanded="false"] > .close {
               display: none;
             }
@@ -34,7 +34,7 @@ const Navbar = () => {
           id="navbarNavAltMarkup"
         >
           <div className="navbar-nav fs-5">
-            <NavLink activeClassName="active" to="/" className="nav-link">
+            <NavLink activeclassName="active" to="/" className="nav-link">
               Characters
             </NavLink>
             <NavLink to="/episodes" className="nav-link">
