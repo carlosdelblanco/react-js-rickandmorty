@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ReactPaginate from "react-paginate";
 
 const Pagination = ({ info, pageNumber, setPageNumber }) => {
+  let [width, setWidth] = useState(window.innerWidth);
+
+  let updateDimension = () => {
+    setWidth(window.innerWidth);
+  };
+  useEffect(() => {
+    window.addEventListener("resize", updateDimension);
+    return () => window.removeEventListener("resize", updateDimension);
+  }, []);
   return (
     <ReactPaginate
       className="pagination justify-content-center gap-4 my-4"
